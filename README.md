@@ -1,6 +1,14 @@
 # EMM
 EMM企业移动管理平台
 
+## 指掌易EMM解析
+指掌易EMM主要包括沙箱引擎、沙箱控制器和APP-SDK组成。
+* 沙箱引擎（Sandbox Engine）SDK：由需要沙箱化的应用来集成，核心是沙箱引擎库。
+* 沙箱控制器 （Sandbox Controller）SDK：由独立于沙箱之外的管控客户端集成，实现对沙箱应用的权限、行为、数据的管理。
+* APP-SDK：是Controller-SDK的一个子集+Sandbox Engine sdk，使得应用自身可动态的执行相应的安全策略。
+
+指掌易的安全功能，建立在独有的安全应用容器（沙箱）基础上。一个普通应用安装前，指掌易自动对应用宝进行“加壳”，应用启动后，运行在指掌易的虚拟容器里，由于应用运行在沙箱环境中，因此应用的所有行为均在沙箱的监控下，针对需要管控的行为进行适配和根据功能配置对该行为进行管控，从而做到自动化的安全防护，并能够在系统无感知的前提下对应用进行管理，有效保证系统和其他应用的稳定性。
+
 ## VirtualApp源码分析
 * [Android 双开沙箱 VirtualApp 源码分析（一）](https://blog.csdn.net/ganyao939543405/article/details/76146760)
 * [VirtualApp解析](https://www.jianshu.com/nb/21276638)
@@ -45,3 +53,4 @@ EMM企业移动管理平台
 * [深信服](https://www.sangfor.com.cn/product-and-solution/sangfor-security/emm)
 * [京联云企业](http://www.pekall.com/index.html)
 * [联信摩贝](http://www.trustmobi.com/zh/)
+* [指掌易](https://www.zhizhangyi.com/pdt_emm.html)
